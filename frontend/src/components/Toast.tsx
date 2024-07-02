@@ -19,7 +19,9 @@ function Toast({ message, type, onClose }: ToastPorps) {
 
   return (
     <div
-      className={`${type === "SUCCESS" ? "text-green-500" : "text-red-600"}`}
+      className={`${
+        type === "SUCCESS" ? "text-green-500" : "text-red-600"
+      } text-3xl`}
     >
       {message}
     </div>
