@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registration from "./pages/Registration";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<p>Home</p>} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/registration" element={<Registration />} />
       </Routes>
     </Router>
