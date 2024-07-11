@@ -29,7 +29,9 @@ export const AppContextProvider = ({
   return (
     <AppContext.Provider
       value={{
-        showToast: (toastMessage) => setToast(toastMessage),
+        showToast: (toastMessage) => {
+          setToast(toastMessage);
+        },
         isLoggedIn: !isError,
       }}
     >
